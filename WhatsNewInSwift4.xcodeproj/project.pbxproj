@@ -8,8 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		B46711D91FA238E100F2984A /* WhatsNewInSwift4.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B46711CF1FA238E000F2984A /* WhatsNewInSwift4.framework */; };
-		B46711DE1FA238E100F2984A /* WhatsNewInSwift4Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46711DD1FA238E100F2984A /* WhatsNewInSwift4Tests.swift */; };
-		B46711E01FA238E100F2984A /* WhatsNewInSwift4.h in Headers */ = {isa = PBXBuildFile; fileRef = B46711D21FA238E000F2984A /* WhatsNewInSwift4.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B46711EA1FA2393500F2984A /* DictionaryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46711E91FA2393500F2984A /* DictionaryTests.swift */; };
+		B46711EC1FA23A7A00F2984A /* WhatsNewInSwift4.h in Headers */ = {isa = PBXBuildFile; fileRef = B46711EB1FA23A7A00F2984A /* WhatsNewInSwift4.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B4DD2DED1FA756ED00F6C69A /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4DD2DEC1FA756ED00F6C69A /* Book.swift */; };
+		B4DD2DEF1FA7579E00F6C69A /* BookDictionaryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4DD2DEE1FA7579E00F6C69A /* BookDictionaryTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,11 +26,13 @@
 
 /* Begin PBXFileReference section */
 		B46711CF1FA238E000F2984A /* WhatsNewInSwift4.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WhatsNewInSwift4.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B46711D21FA238E000F2984A /* WhatsNewInSwift4.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WhatsNewInSwift4.h; sourceTree = "<group>"; };
 		B46711D31FA238E000F2984A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B46711D81FA238E100F2984A /* WhatsNewInSwift4Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WhatsNewInSwift4Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B46711DD1FA238E100F2984A /* WhatsNewInSwift4Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatsNewInSwift4Tests.swift; sourceTree = "<group>"; };
 		B46711DF1FA238E100F2984A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B46711E91FA2393500F2984A /* DictionaryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryTests.swift; sourceTree = "<group>"; };
+		B46711EB1FA23A7A00F2984A /* WhatsNewInSwift4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WhatsNewInSwift4.h; sourceTree = "<group>"; };
+		B4DD2DEC1FA756ED00F6C69A /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		B4DD2DEE1FA7579E00F6C69A /* BookDictionaryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDictionaryTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,7 +75,8 @@
 		B46711D11FA238E000F2984A /* WhatsNewInSwift4 */ = {
 			isa = PBXGroup;
 			children = (
-				B46711D21FA238E000F2984A /* WhatsNewInSwift4.h */,
+				B4DD2DEC1FA756ED00F6C69A /* Book.swift */,
+				B46711EB1FA23A7A00F2984A /* WhatsNewInSwift4.h */,
 				B46711D31FA238E000F2984A /* Info.plist */,
 			);
 			path = WhatsNewInSwift4;
@@ -80,7 +85,8 @@
 		B46711DC1FA238E100F2984A /* WhatsNewInSwift4Tests */ = {
 			isa = PBXGroup;
 			children = (
-				B46711DD1FA238E100F2984A /* WhatsNewInSwift4Tests.swift */,
+				B46711E91FA2393500F2984A /* DictionaryTests.swift */,
+				B4DD2DEE1FA7579E00F6C69A /* BookDictionaryTests.swift */,
 				B46711DF1FA238E100F2984A /* Info.plist */,
 			);
 			path = WhatsNewInSwift4Tests;
@@ -93,7 +99,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B46711E01FA238E100F2984A /* WhatsNewInSwift4.h in Headers */,
+				B46711EC1FA23A7A00F2984A /* WhatsNewInSwift4.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,6 +154,7 @@
 				TargetAttributes = {
 					B46711CE1FA238E000F2984A = {
 						CreatedOnToolsVersion = 9.0.1;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 					B46711D71FA238E100F2984A = {
@@ -196,6 +203,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4DD2DED1FA756ED00F6C69A /* Book.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -203,7 +211,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B46711DE1FA238E100F2984A /* WhatsNewInSwift4Tests.swift in Sources */,
+				B4DD2DEF1FA7579E00F6C69A /* BookDictionaryTests.swift in Sources */,
+				B46711EA1FA2393500F2984A /* DictionaryTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -333,11 +342,12 @@
 		B46711E41FA238E100F2984A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 7J7LD9SB6Q;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -348,6 +358,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.aboutobjects.training.WhatsNewInSwift4;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
@@ -355,11 +366,12 @@
 		B46711E51FA238E100F2984A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 7J7LD9SB6Q;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -377,6 +389,7 @@
 		B46711E71FA238E100F2984A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 7J7LD9SB6Q;
@@ -391,6 +404,7 @@
 		B46711E81FA238E100F2984A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 7J7LD9SB6Q;
