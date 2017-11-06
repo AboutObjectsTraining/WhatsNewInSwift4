@@ -4,22 +4,12 @@
 import Foundation
 
 public enum Rating: Int, CustomStringConvertible {
-    case one = 1
-    case two = 2
-    case three = 3
-    case four = 4
-    case five = 5
-    public var description: String {
-        switch self {
-        case .one:   return "✭✩✩✩✩"
-        case .two:   return "✭✭✩✩✩"
-        case .three: return "✭✭✭✩✩"
-        case .four:  return "✭✭✭✭✩"
-        case .five:  return "✭✭✭✭✭"
-        }
+    case none, one, two, three, four, five
+    var stars: [String] {
+        return ["✩✩✩✩✩", "✭✩✩✩✩", "✭✭✩✩✩", "✭✭✭✩✩", "✭✭✭✭✩", "✭✭✭✭✭"]
     }
+    public var description: String { return stars[rawValue] }
 }
-
 
 struct Book: CustomStringConvertible
 {
@@ -35,6 +25,5 @@ struct Book: CustomStringConvertible
     var author: Author
     var rating: Rating
     
-//    var description: String { return title }
     public var description: String { return "\(title) \(rating)" }
 }
